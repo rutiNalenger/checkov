@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2021-04-01-preview",
+      "name": "fail",
+      "properties": {
+        "title": "echo",
+        "description": "A backend service for the Each API.",
+        "protocol": "http",
+        "url": "http://mybackend.example.com"
+      }
+    }
+  ]
+}
